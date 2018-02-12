@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+
+        .block {
+            text-align:center;
+            align-items: center;
+            justify-content: center;
+        }
+        .width-150px{
+            width: 400px;
+            display: inline-block;
+        }
+        .title{
+            color: black;
+            font-size: 28px ;
+            padding: 20px 43px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: dashed;
+            color: white;
+            border-radius: 8px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .button4 {
+            background-color: #e7e7e7;
+            color: black;
+        } /* Gray */
+        .button5 {
+            background-color: #555555;
+        } /* Black */
+
+    </style>
+
+</head>
+<body>
+    <div class="title">
+        POSD Client for Google Cloud
+    </div>
+
+    <input type="button" class="button button4 width-150px block" onclick="location.href='/createCustom1'" value="Create Custom Role Owner" >
+    <input type="button" class="button button4 width-150px block" onclick="location.href='/createCustom2'" value="Create Custom Role Viewer" >
+    <br>
+    <input type="button" class="button button4 width-150px block" onclick="location.href='/deleteCustom1'" value="Delete Custom Role Owner" >
+    <input type="button" class="button button4 width-150px block" onclick="location.href='/deleteCustom2'" value="Delete Custom Role Viewer" >
+
+    <br>
+
+    <input type="button" class="button button4 width-150px block" onclick="location.href='/unDeleteCustom1'" value="Undelete Custom Role Owner" >
+    <input type="button" class="button button4 width-150px block" onclick="location.href='/unDeleteCustom1'" value="Undelete Custom Role Viewer" >
+
+    <br>
+<br><br><br>
+    <input type="button" class="button button5 width-150px block" onclick="location.href='/createVersion1'" value="Create Policy With Role Owner" >
+    <input type="button" class="button button5 width-150px block" onclick="location.href='/createVersion2'" value="Create Policy With Role Viewer" >
+    <br>
+    <input type="button" class="button button5 width-150px block" onclick="location.href='/deleteVersion1'" value="Delete Policy With Role Owner" >
+    <input type="button" class="button button5 width-150px block" onclick="location.href='/deleteVersion2'" value="Delete Policy With Role Viewer" >
+
+    <div ng-view></div>
+    <script src="./webjars/angularjs/1.5.7/angular.js"></script>
+    <script src="./webjars/angularjs/1.5.7/angular-resource.js"></script>
+    <script src="./webjars/angularjs/1.5.7/angular.min.js"></script>
+    <script src="./webjars/angularjs/1.5.7/angular-route.js"></script>
+</body>
+</html>
